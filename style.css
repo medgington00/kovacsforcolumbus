@@ -4,16 +4,17 @@ body {
 	background-color:white;
 	left:0;
 	width:100%;
+
+	background-color:rgb(245,245,245);
 }
 
 #Wrapper {
-	min-height: calc(100vh - 50px);
 }
 
 #Header {
 	position:fixed;
 	width:100%;
-	height:88px;
+	height:50px;
 	top:0;
 	left:0;
 	overflow:hidden;
@@ -22,63 +23,95 @@ body {
 	background-color:white;
 }
 
-#Header table {
-	position:absolute;
-	height:100%;
-	width:100%;
-	
-	text-align:center;
-}
-
-#Header th {
+#Header a {
 	/*TEXT PROPERTIES*/
 	transition-duration: .25s;
 	color:rgb(15,15,15);
-	font-family: "Silka", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	text-decoration:none;
-	font-size:18px;
-	font-weight:700;
+	font-size:16px;
+	font-weight:500;
 	letter-spacing:1px;
 	
-	padding-top:5px;
-	padding-bottom:5px;
-	
-	width:6%;
-	position:absolute;
-	top:7px;
-}
-
-#Header .NavButton {
-	top:14px;
-}
-
-#Header .NavButton:hover {
-	transition-duration: .25s;
-	color:rgb(75,75,75);
+	/* POSITION PROPERTIES */
+	margin-left:20px;
+	margin-right:20px;
+	width:115px;
 }
 
 #Header #LogoImage {
-	top:16px;
-	max-width: 200%;
-	height: auto;
+	position:absolute;
+	left:1%;
+	top:5px;
+	max-height: 85%;
+	width: auto;
+	
+}
+
+#Header #NavButtonDiv {
+	padding:5px;
+	
+	position:relative;
+	left:0;
+	width:100%;
+	text-align:center;
+	top:12px;
+	}
+
+#Header #NavButtonDiv a {
+}
+
+#Header #NavButtonDiv a:hover {
+	color:rgb(75,75,75);
 }
 
 #Header #DonateButton {
-	transition-duration: .25s;
-	left:90%;
 	color:white;
 	font-weight:900;
 	background-color:#a00909;
 	letter-spacing:0px;
+	
+	float:right;
 }
 
 #Header #DonateButton:hover {
-	transition-duration: .25s;
 	color:rgb(200,200,200);
 	background-color:#701919;
 }
 
+/* First image on page */
+#PageImage1 {
+	position:relative;
+	width:90%;
+	height:auto;
+	margin-top:40px;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:0;
+
+}
+
+/* Values box */
+#RedBox1 {
+	position:relative;
+	background-color:#BC2014;
+	height:54px;
+	width:95%;
+	margin-top:0;
+	margin-left:2.5%;
+	
+	font-size:48px;
+	text-align:center;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+/* Headshot image */
+#PageImage2 {
+	position:relative;
+	margin-left:5%;
+}
+
 #Footer {
 	background-color:rgb(100,100,100);
-	height: 88px;
+	height: 0px;
 }
