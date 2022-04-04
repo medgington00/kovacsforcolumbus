@@ -1,0 +1,84 @@
+body {
+	position:relative;
+	overflow-x:hidden;
+	background-color:white;
+	left:0;
+	width:100%;
+}
+
+#Wrapper {
+	min-height: calc(100vh - 50px);
+}
+
+#Header {
+	position:fixed;
+	width:100%;
+	height:88px;
+	top:0;
+	left:0;
+	overflow:hidden;
+	z-index:9999;
+	
+	background-color:white;
+}
+
+#Header table {
+	position:absolute;
+	height:100%;
+	width:100%;
+	
+	text-align:center;
+}
+
+#Header th {
+	/*TEXT PROPERTIES*/
+	transition-duration: .25s;
+	color:rgb(15,15,15);
+	font-family: "Silka", sans-serif;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:700;
+	letter-spacing:1px;
+	
+	padding-top:5px;
+	padding-bottom:5px;
+	
+	width:6%;
+	position:absolute;
+	top:7px;
+}
+
+#Header .NavButton {
+	top:14px;
+}
+
+#Header .NavButton:hover {
+	transition-duration: .25s;
+	color:rgb(75,75,75);
+}
+
+#Header #LogoImage {
+	top:16px;
+	max-width: 200%;
+	height: auto;
+}
+
+#Header #DonateButton {
+	transition-duration: .25s;
+	left:90%;
+	color:white;
+	font-weight:900;
+	background-color:#a00909;
+	letter-spacing:0px;
+}
+
+#Header #DonateButton:hover {
+	transition-duration: .25s;
+	color:rgb(200,200,200);
+	background-color:#701919;
+}
+
+#Footer {
+	background-color:rgb(100,100,100);
+	height: 88px;
+}
