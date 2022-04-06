@@ -1,0 +1,200 @@
+/*
+
+Red Color: #BB1F14
+Blue Color: #051CA1
+ 
+*/
+
+body {
+	width:100%;
+	height:2000px;
+	padding:0;
+	margin:0;
+}
+
+#Wrapper {
+}
+
+/** ------------------------HEADER------------------------------------**/
+
+#Header {
+	
+}
+
+#AboveHeaderDiv {
+	position:relative;
+	left:0px;
+	width:100%;
+	height:56px;
+	background-image:url("logo.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#Navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	padding:0px;
+	height:48px;
+	z-index:9999;
+	
+	background-color:#FFFFFF;
+	border-bottom:solid black 2px;
+}
+
+#Navbar a {
+	/*TEXT PROPERTIES*/
+	transition-duration: .25s;
+	color:rgb(15,15,15);
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:500;
+	letter-spacing:1px;
+	
+	
+	/* POSITION PROPERTIES */
+	position:relative;
+	top:15px;
+	margin-left:15px;
+	margin-right:15px;
+
+}
+
+#Navbar a:hover {
+	transition-duration: .25s;
+	color:rgb(75,75,75);
+}
+
+#AboveMapDiv {
+	position:relative;
+	width:100%;
+	height:48px;
+	
+	background-color:#BB1F14;
+}
+
+#AboveMapDiv p{
+	margin:0;
+	padding-top:3px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:36px;
+	font-weight:700;
+	color:white;
+	text-shadow: 5px 5px 4px #8B170F;
+}
+
+#MapDiv {
+	position:relative;
+	width:77%;
+	left:11.5%;
+	height:720px;
+}
+
+#MapDiv img {
+	position:absolute;
+	height:100%;
+	width:auto;
+}
+
+.MapButton {
+	transition-duration:.5s;
+	background-image:url("pin.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:25px;
+	height:25px;
+	border:none;
+	background-color:rgb(1,1,1,0);
+	
+}
+/* ON HOVER left-12.5 top-27*/
+.MapButton:hover {
+	transition-duration:.5s;
+	width:50px;
+	height:50px;
+}
+
+#ScramblersButton {
+	position:absolute;
+	left:220px;
+	top:40px;
+}
+
+#ScramblersButton:hover {
+	left:207.5px;
+	top:13px;
+}
+
+#CondadosButton {
+	position:absolute;
+	left:360px;
+	top:387.5px;
+}
+
+#CondadosButton:hover {
+	position:absolute;
+	left:347.5px;
+	top:360.5px;
+}
+
+#OSUButton {
+	position:absolute;
+	left:318px;
+	top:337.5px;
+}
+
+#OSUButton:hover {
+	position:absolute;
+	left:305.5px;
+	top:310.5px;
+}
+
+.MapDiv {
+	display:none;
+	position:absolute;
+	height:100%;
+	width:720px;
+	right:0;
+	
+	background-color:rgb(225,225,225);
+}
+
+.MapDiv h1 {
+	padding-top:15px;
+	padding-bottom:15px;
+	margin:0;
+	
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	color:white;
+	letter-spacing:1px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	
+	background-color:rgb(215,215,215);
+}
+
+.MapDiv p {
+	padding-left:50px;
+	padding-right:50px;
+	
+}
+
+#ScramblersDiv {
+}
+
+#CondadosDiv {
+}
+
+#OSUDiv {
+}
+
+/** ------------------------CONTENT------------------------------------**/
+
+/** ------------------------FOOTER------------------------------------**/

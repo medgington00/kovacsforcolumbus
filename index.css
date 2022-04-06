@@ -1,0 +1,69 @@
+/*
+
+Red Color: #BB1F14
+Blue Color: #051CA1
+ 
+*/
+
+body {
+	width:100%;
+	height:2000px;
+	padding:0;
+	margin:0;
+}
+
+#Wrapper {
+}
+
+/** ------------------------HEADER------------------------------------**/
+
+#Header {
+	
+}
+
+#AboveHeaderDiv {
+	position:relative;
+	left:0px;
+	width:100%;
+	height:56px;
+	background-image:url("logo.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#Navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	padding:0px;
+	height:48px;
+	z-index:9999;
+	
+	background-color:#FFFFFF;
+	border-bottom:solid black 2px;
+}
+
+#Navbar a {
+	/*TEXT PROPERTIES*/
+	transition-duration: .25s;
+	color:rgb(15,15,15);
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:500;
+	letter-spacing:1px;
+	
+	
+	/* POSITION PROPERTIES */
+	position:relative;
+	top:15px;
+	margin-left:15px;
+	margin-right:15px;
+
+}
+
+#Navbar a:hover {
+	transition-duration: .25s;
+	color:rgb(75,75,75);
+}
