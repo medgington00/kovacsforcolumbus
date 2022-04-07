@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<Title> Kovacs for Columbus </Title>
+			<link rel="stylesheet" type="text/css" href="styles/about_edina.css">
+		</head>
+		<body>
+			<div id="AboveHeaderDiv"></div>
+			
+			<div id="Navbar">
+				<a href="index.html" style="float:left">HOME</a>
+				<a href="about_edina.html" style="float:left">ABOUT EDINA</a>
+				<a href="#Issues" style="float:left">ISSUES</a>
+				<a href="#Issues" style="float:left">UPDATES</a>
+				<a href="contact.html" style="float:left">CONTACT</a>
+				<a href="#Donate" style="float:right;background-color:#BB1F14;color:#FFFFFF;font-weight:700;padding:5px;top:10px;">DONATE</a>
+			</div>
+			
+			<div id="AboveMapDiv"> <p>COLUMBUS-BORN</p> </div>
+			
+			<div id="MapDiv"> 
+				<img src="map.png">
+				<button type="button" class="MapButton" id="ScramblersButton" onClick="ShowScramblersDiv()"></button>
+				<button type="button" class="MapButton" id="CondadosButton" onClick="ShowCondadosDiv()"></button>
+				<button type="button" class="MapButton" id="OSUButton" onClick="ShowOSUDiv()"></button>
+				
+				<div id="ScramblersDiv" class="MapDiv"> <h1> SCRAMBLER'S </h1> <p> Text here </p> </div>
+				<div id="CondadosDiv" class="MapDiv"> <h1> CONDADO'S TACOS </h1> <p> Text here </p> </div>
+				<div id="OSUDiv" class="MapDiv"> <h1> THE OHIO STATE UNIVERSITY </h1> <p> Text here </p> </div>
+			</div>
+			<script>
+				function HideMapDivs() {
+					var mapdivs = document.getElementsByClassName('MapDiv');
+						for(var i = 0; i < mapdivs.length; i++){
+							mapdivs[i].style.display = "none";
+						}
+						
+					var mapbuttons = document.getElementsByClassName('MapButton');
+						for(var i = 0; i < mapbuttons.length; i++){
+							mapbuttons[i].style.backgroundImage = "url('styles/pin.png')";
+						}
+				}
+			
+				function ShowScramblersDiv() {
+					HideMapDivs();
+					document.getElementById('ScramblersButton').style.backgroundImage = "url('styles/pin_selected.png')";
+					document.getElementById('ScramblersDiv').style.display = "block";
+				}
+				
+				function ShowCondadosDiv() {
+					HideMapDivs();
+					document.getElementById('CondadosButton').style.backgroundImage = "url('styles/pin_selected.png')";
+					document.getElementById('CondadosDiv').style.display = "block";
+				}
+				
+				function ShowOSUDiv() {
+					HideMapDivs();
+					document.getElementById('OSUButton').style.backgroundImage = "url('styles/pin_selected.png')";
+					document.getElementById('OSUDiv').style.display = "block";
+				}
+			</script>
+		</body>
+	</html>
